@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV OPENGROK_INSTANCE_BASE /grok
 
 RUN apt-get update
-RUN apt-get install -y openjdk-8-jre-headless exuberant-ctags git subversion mercurial tomcat7 wget inotify-tools unzip
+RUN apt-get install -y openjdk-8-jre-headless exuberant-ctags git subversion mercurial tomcat7 wget inotify-tools unzip vi
 ADD install.sh /usr/local/bin/install
 RUN /usr/local/bin/install
 ADD run.sh /usr/local/bin/run
